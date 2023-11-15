@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <ul>
+          <li class="twitter">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <div class="slider">
+          <p>twitter</p>
+        </div>
+      </li>
+      
+      <li class="instagram">
+        <i aria-hidden="true"></i>
+        <div class="slider">
+          <p>instagram</p>
+        </div>
+      </li>
+          <li class="google">
+        <i class="fa fa-google" aria-hidden="true"></i>
+        <div class="slider">
+          <p>google</p>
+        </div>
+      </li>
+          <li class="whatsapp">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <div class="slider">
+          <p>whatsapp</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+    </div>
+    <div class="header">
+        <div class="nav">
+          <a href="index.html">EDITORS_LOGIN</a>
+          <a href="reviewerslogin.html">REVIEWERS_LOGIN</a>
+          <a href="authorslogin.html">AUTHORS_LOGIN</a>
+        </div>
+        <div class="logo">
+            <a href="about.html">
+                <img src="logo.png" alt = "EventLogo">
+            </a>
+        </div>
+    </div>
+    <div class="regcontent3">
+      <img src="jslogo.png">
+  </div>
+  <div class="logdiv">
+    <section id="editor-login">
+        <h2>Reviewer Login</h2>
+        <form class="regform"  action="reviewers.php" method="post">
+            <input type="hidden" name="editor_login" value="1">
+            <label for="editor_login_username">Username:</label>
+            <input type="text" id="editor_login_username" name="editor_login_username" required>
+
+            <label for="editor_login_password">Password:</label>
+            <input type="password" id="editor_login_password" name="editor_login_password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <section id="editor-registration">
+        <h2>Reviewer Registration</h2>
+        <form class="regform" action="reviewers.php" method="post">
+            <input type="hidden" name="editor_registration" value="1">
+            <label for="editor_username">Username:</label>
+            <input type="text" id="editor_username" name="editor_username" required>
+
+            <label for="editor_password">Password:</label>
+            <input type="password" id="editor_password" name="editor_password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section></div>
+  <div class="contact-container1">
+    <form action="#" method="post">
+        <h2>Contact Us</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
